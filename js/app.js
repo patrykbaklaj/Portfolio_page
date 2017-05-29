@@ -71,7 +71,8 @@ $(".download").inViewport(function(px){
     else $(this).removeClass("download_active") ;
 });
 
-
+// slideshow
+$('.carousel').carousel();
 
 
 });

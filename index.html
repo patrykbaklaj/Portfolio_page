@@ -2,11 +2,15 @@
 <!DOCTYPE html>
 <html lang="PL-pl">
 <head>
-  <title>Animated header</title>
+  <title>Patryk Bakłaj</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Patryk Bakłaj - Junior Forntend Developer" />
+  <meta name="description" content="Patryk Bakłaj - Junior Frontend Developer" />
+
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
   <link rel="stylesheet" type="text/css" href="js/style.css" />
   <link href='http://fonts.googleapis.com/css?family=Terminal+Dosis|Niconne' rel='stylesheet' type='text/css' />
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
@@ -15,6 +19,9 @@
   <!-- Type it script  -->
   <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
   <script type="text/javascript" src="js/out.js"></script>
+
+
+
 </head>
 
 <body>
@@ -44,9 +51,8 @@
       <div id="letter-container" class="letter-container">
         <h2>
           <a href="#" class="text_toAnimate">Hello, my name is Patryk Bakłaj</a>
-          <a href="#" class="description_toAnimate">Junior Frontend Developer</a>
         </h2>
-        <h3>I am an junior frontend developer.<br> Feel free to take a look at my page.</h3>
+        <h3>I would like to become Junior Front-End developer.<br> Feel free to take a look at my page.</h3>
       </div>
     </div>
   </section>
@@ -61,25 +67,110 @@
         <p class="section_second_text">
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <button type="button" name="button" class="download">Download Resume</button>
+        <button type="button" name="button" class="download">
+          <a href="./assets/Patryk_Baklaj_CV.pdf" target="blank">Download Resume</a>
+        </button>
       </div>
     </div>
   </section>
 
-  <section class="section_second" id="section_second">
+  <section class="section_second" id="portfolio">
     <div class="container_second">
+
+
+
+
+
+
+
+
+
+
+
+
       <div class="text_content">
-        <h2 class="section_second_header">Porfolio</h2>
-        <p class="section_second_text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        </p>
-        <p class="section_second_text">
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <h2 class="section_second_header">Projects</h2>
+
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+
+              <div class="portfolio_item">
+                <p class="section_second_text">
+                  My first application made with React
+                </p>
+                <a href="#"><img src="./assets/CityQuiz.png" alt=""></a>
+                <div class="item_title">
+                  <p>CityQuiz</p>
+                </div>
+                <div class="item_tech item_tech1">
+                  HTML
+                </div>
+                <div class="item_tech item_tech2">
+                  CSS/SASS
+                </div>
+                <div class="item_tech item_tech3">
+                  React
+                </div>
+              </div>
+
+            </div>
+            <div class="item">
+              <div class="portfolio_item">
+                <p class="section_second_text">
+                  Food Consulting Group Website
+                </p>
+                <a href="http://fc-group.eu" target="_blank"><img src="./assets/FCG.png" alt=""></a>
+                <div class="item_title">
+                  <p>fc-group.eu</p>
+                </div>
+                <div class="item_tech item_tech1">
+                  HTML
+                </div>
+                <div class="item_tech item_tech2">
+                  CSS/SASS
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
     </div>
   </section>
 
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="http://localhost:35729/livereload.js"></script>
 
 </body>
