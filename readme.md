@@ -4,5 +4,5 @@ Technologies I used:
 
 HTML
 CSS & Sass
-Webpack
 JQuery
+Webpack

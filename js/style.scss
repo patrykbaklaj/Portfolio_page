@@ -1,10 +1,15 @@
-
+@import url(http://fonts.googleapis.com/css?family=Vollkorn|Roboto);
 
 body {
 	background-color: #2F2F2F;
 	// font-family: 'Terminal Dosis', Arial, sans-serif;
 	// color: #f6e7ce;
 	overflow-x: hidden;
+	section {
+		-webkit-box-shadow: inset 0px 0px 2px 1px black;
+		-moz-box-shadow: inset 0px 0px 2px 1px black;
+		box-shadow: inset 0px 0px 2px 1px black;
+	}
 }
 
 
@@ -18,9 +23,6 @@ html * {
 }
 
 // navbar styling
-@import url(http://fonts.googleapis.com/css?family=Vollkorn|Roboto);
-
-
 
 .toggle-button {
 	position: fixed;
@@ -129,11 +131,36 @@ a.text_toAnimate, a.description_toAnimate {
 	align-items: center;
 	width: 100vw;
 	height: 100vh;
+	position: relative;
+	.icons_container {
+		color: black;
+		position: absolute;
+		bottom: 10%;
+		p {
+			font-family: 'Terminal Dosis', Arial, sans-serif;
+			font-weight: bold;
+			font-size: 1.2em;
+			margin-bottom: 0.5em;
+		}
+		.icons {
+			display: inline-block;
+			margin: auto 1em auto 1em;
+			img {
+				height: 3vmax;
+
+			}
+		}
+	}
+
+
 }
 
+
 .letter-container {
+	margin-bottom: 2em;
 	width: 70%;
-	border: 2px dashed rgba(255,255,255,0.3);
+	// border: 2px dashed rgba(255,255,255,0.3);
+	border: 2px dashed rgba(0, 0, 0, 0.6);
 	margin: 1em auto;
 	padding: 3em;
 	// min-height: 50vh;
@@ -156,9 +183,6 @@ a.text_toAnimate, a.description_toAnimate {
 			text-decoration: none;
 			text-align: center;
 			font-size: 1.2em;
-			// line-height: 1.5em;
-			// display: block;
-			// padding-bottom: 30px;
 		}
 		span.name_animate {
 			font-size: 2em;
@@ -746,10 +770,17 @@ section.section_second {
 		color: white;
 		.text_content {
 			text-align: center;
+			.hr {
+				border: 0;
+				height: 1px;
+				background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+			}
 			h2.section_second_header {
-				font-size: 3.5em;
+				font-family: 'Vollkorn', serif;
+				font-size: 3em;
 				margin: 0.2em 1em 0.2em 1em;
 				letter-spacing: 3px;
+				font-weight: bold;
 			}
 			h2.header_active {
 				animation: comeHeader ease-out 1.2s;
@@ -775,9 +806,10 @@ section.section_second {
 			}
 
 			p.section_second_text {
-				font-size: 1.5em;
+				font-size: 1.3em;
 				text-align: justify;
 				margin-top: 1.5em;
+				color: black;
 			}
 			p.text_active {
 				animation: comeText ease 2s;
