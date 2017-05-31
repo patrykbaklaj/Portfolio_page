@@ -145,6 +145,23 @@ a.text_toAnimate, a.description_toAnimate {
 		.icons {
 			display: inline-block;
 			margin: auto 1em auto 1em;
+			&:hover {
+				animation: comeDownload linear 1s;
+				animation-iteration-count: 1;
+				transform-origin: 50% 50%;
+				-webkit-animation: comeDownload linear 1s;
+				-webkit-animation-iteration-count: 1;
+				-webkit-transform-origin: 50% 50%;
+				-moz-animation: comeDownload linear 1s;
+				-moz-animation-iteration-count: 1;
+				-moz-transform-origin: 50% 50%;
+				-o-animation: comeDownload linear 1s;
+				-o-animation-iteration-count: 1;
+				-o-transform-origin: 50% 50%;
+				-ms-animation: comeDownload linear 1s;
+				-ms-animation-iteration-count: 1;
+				-ms-transform-origin: 50% 50%;
+			}
 			img {
 				height: 3vmax;
 
@@ -970,14 +987,41 @@ section.section_second {
 			background: white;
 		}
 	}
-
-
 	.carousel-control {
 		width: 10%;
 		.glyphicon {
 			font-size: 1.5em;
 		}
 	}
+}
 
+#skill_set {
+	p.section_second_text, p.section_second_text_big {
+			text-align: center;
+	}
+	.skill_icons {
+		display: inline-block;
+		margin: 2em;
 
+		img {
+			height: 5vmax;
+			&:hover {
+				animation: comeDownload linear 1s;
+				animation-iteration-count: 1;
+				transform-origin: 50% 50%;
+				-webkit-animation: comeDownload linear 1s;
+				-webkit-animation-iteration-count: 1;
+				-webkit-transform-origin: 50% 50%;
+				-moz-animation: comeDownload linear 1s;
+				-moz-animation-iteration-count: 1;
+				-moz-transform-origin: 50% 50%;
+				-o-animation: comeDownload linear 1s;
+				-o-animation-iteration-count: 1;
+				-o-transform-origin: 50% 50%;
+				-ms-animation: comeDownload linear 1s;
+				-ms-animation-iteration-count: 1;
+				-ms-transform-origin: 50% 50%;
+			}
+		}
+	}
 }
