@@ -6,6 +6,7 @@ body {
 	// color: #f6e7ce;
 	overflow-x: hidden;
 	section {
+
 		-webkit-box-shadow: inset 0px 0px 2px 1px black;
 		-moz-box-shadow: inset 0px 0px 2px 1px black;
 		box-shadow: inset 0px 0px 2px 1px black;
@@ -767,17 +768,20 @@ a.text_toAnimate, a.description_toAnimate {
 
 
 section.section_second {
+
 	width: 100vw;
 	height: 100vh;
 	min-height: 50px;
 	display: flex;
 	justify-content: center;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2f2f2f+0,7d7e7d+30 */
 	background: #2f2f2f; /* Old browsers */
 	background: -moz-linear-gradient(top,  #2f2f2f 0%, #7d7e7d 30%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top,  #2f2f2f 0%,#7d7e7d 30%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom,  #2f2f2f 0%,#7d7e7d 30%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f2f2f', endColorstr='#7d7e7d',GradientType=0 ); /* IE6-9 */
+
+
+
 
 	.container_second {
 		display: flex;
@@ -995,10 +999,147 @@ section.section_second {
 	}
 }
 
+@keyframes animationFrames{
+	0% {
+		opacity:0;
+		transform:  translate(-1500px,0px)  ;
+	}
+	60% {
+		opacity:1;
+		transform:  translate(30px,0px)  ;
+	}
+	80% {
+		transform:  translate(-10px,0px)  ;
+	}
+	100% {
+		opacity:1;
+		transform:  translate(0px,0px)  ;
+	}
+}
+
+@-moz-keyframes animationFrames{
+	0% {
+		opacity:0;
+		-moz-transform:  translate(-1500px,0px)  ;
+	}
+	60% {
+		opacity:1;
+		-moz-transform:  translate(30px,0px)  ;
+	}
+	80% {
+		-moz-transform:  translate(-10px,0px)  ;
+	}
+	100% {
+		opacity:1;
+		-moz-transform:  translate(0px,0px)  ;
+	}
+}
+
+@-webkit-keyframes animationFrames {
+	0% {
+		opacity:0;
+		-webkit-transform:  translate(-1500px,0px)  ;
+	}
+	60% {
+		opacity:1;
+		-webkit-transform:  translate(30px,0px)  ;
+	}
+	80% {
+		-webkit-transform:  translate(-10px,0px)  ;
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:  translate(0px,0px)  ;
+	}
+}
+
+@-o-keyframes animationFrames {
+	0% {
+		opacity:0;
+		-o-transform:  translate(-1500px,0px)  ;
+	}
+	60% {
+		opacity:1;
+		-o-transform:  translate(30px,0px)  ;
+	}
+	80% {
+		-o-transform:  translate(-10px,0px)  ;
+	}
+	100% {
+		opacity:1;
+		-o-transform:  translate(0px,0px)  ;
+	}
+}
+
+@-ms-keyframes animationFrames {
+	0% {
+		opacity:0;
+		-ms-transform:  translate(-1500px,0px)  ;
+	}
+	60% {
+		opacity:1;
+		-ms-transform:  translate(30px,0px)  ;
+	}
+	80% {
+		-ms-transform:  translate(-10px,0px)  ;
+	}
+	100% {
+		opacity:1;
+		-ms-transform:  translate(0px,0px)  ;
+	}
+}
+
+@mixin animationDelay($delay) {
+	-webkit-animation-delay: $delay;
+	-moz-animation-delay: $delay;
+	-ms-animation-delay: $delay;
+	animation-delay: $delay;
+}
+
+@for $i from 0 through 10 {
+	.skill#{$i} {
+		$delay: $i*0.2;
+		animation: animationFrames ease 1.5s;
+		animation-delay: #{$delay}s;
+		animation-iteration-count: 1.5;
+		transform-origin: 50% 50%;
+		animation-fill-mode: both; /*when the spec is finished*/
+		-webkit-animation: animationFrames ease 1.5s;
+		-webkit-animation-delay: #{$delay}s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-transform-origin: 50% 50%;
+		-webkit-animation-fill-mode: both; /*Chrome 16+, Safari 4+*/
+		-moz-animation: animationFrames ease 1.5s;
+		-moz-animation-delay: #{$delay}s;
+		-moz-animation-iteration-count: 1;
+		-moz-transform-origin: 50% 50%;
+		-moz-animation-fill-mode: both; /*FF 5+*/
+		-o-animation: animationFrames ease 1.5s;
+		-o-animation-delay: #{$delay}s;
+		-o-animation-iteration-count: 1;
+		-o-transform-origin: 50% 50%;
+		-o-animation-fill-mode:both; /*Not implemented yet*/
+		-ms-animation: animationFrames ease 1.5s;
+		-ms-animation-delay: #{$delay}s;
+		-ms-animation-iteration-count: 1;
+		-ms-transform-origin: 50% 50%;
+		-ms-animation-fill-mode: both; /*IE 10+*/
+	}
+}
+
+
 #skill_set {
 	p.section_second_text, p.section_second_text_big {
-			text-align: center;
+		text-align: center;
+		font-weight: bold;
+		span {
+			text-transform: uppercase;
+			text-shadow: 0 0 1px blue;
+			font-size: 1.2em;
+			letter-spacing: 0.04em;
+		}
 	}
+
 	.skill_icons {
 		display: inline-block;
 		margin: 2em;
@@ -1022,6 +1163,49 @@ section.section_second {
 				-ms-animation-iteration-count: 1;
 				-ms-transform-origin: 50% 50%;
 			}
+		}
+	}
+}
+
+#contact {
+	@extend #skill_set;
+	span a {
+		text-transform: lowercase;
+		text-decoration: none;
+		cursor: pointer;
+		color: lighten(grey, 40%);
+		font-size: 0.7em;
+		text-shadow: none;
+		&:hover {
+			color: white;
+			text-shadow: 0 0 15px white;
+		}
+	}
+	.text_content {
+		min-width: 60%;
+	}
+	form {
+		color: lighten(grey, 35%);
+		margin: 1.5em;
+		input, textarea {
+			background: black;
+			padding: 12px;
+			border: 1px solid black;
+			border-radius: 4px;
+			box-sizing: border-box;
+			resize: vertical;
+			margin: 0.5em;
+			display: block;
+			width: 100%;
+			&:hover, &:focus {
+				box-shadow: 0 0 10px 1px white;
+			}
+		}
+		
+		input[type="submit"] {
+			width: 30%;
+			margin: auto;
+			padding: 5px;
 		}
 	}
 }
