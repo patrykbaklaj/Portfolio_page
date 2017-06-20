@@ -1,18 +1,21 @@
-@import url(http://fonts.googleapis.com/css?family=Vollkorn|Roboto);body {
-  background-color: #2F2F2F;
-  overflow-x: hidden; }
-  body section {
-    -webkit-box-shadow: inset 0px 0px 2px 1px black;
-    -moz-box-shadow: inset 0px 0px 2px 1px black;
-    box-shadow: inset 0px 0px 2px 1px black; }
-
-html * {
+@import url(http://fonts.googleapis.com/css?family=Vollkorn|Roboto);html * {
   margin: 0;
   padding: 0;
   font-size: 16px;
   font-family: 'Slabo 27px', sans-serif;
   box-sizing: border-box;
   font-size: 1.4vmax; }
+
+body {
+  background-color: #2F2F2F;
+  background-image: url("../assets/tweed_@2X.png");
+  font-family: 'Terminal Dosis', Arial, sans-serif;
+  color: #f6e7ce;
+  overflow-x: hidden; }
+  body section {
+    -webkit-box-shadow: inset 0px 0px 2px 1px black;
+    -moz-box-shadow: inset 0px 0px 2px 1px black;
+    box-shadow: inset 0px 0px 2px 1px black; }
 
 .toggle-button {
   position: fixed;
@@ -30,7 +33,7 @@ html * {
   transform: rotate(180deg); }
 
 .line {
-  background-color: #7A7A7A;
+  background-color: #e6e6e6;
   display: block;
   width: 100%;
   height: 3px;
@@ -183,7 +186,6 @@ a.text_toAnimate, a.description_toAnimate {
     .letter-container h2 span.desc_animate {
       font-size: 2em;
       line-height: 1.5em;
-      color: white;
       text-shadow: 0px 0px 2px blue, 1px 1px 4px blue;
       -webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3s ease;
@@ -1181,16 +1183,7 @@ section.section_second {
   min-height: 50px;
   display: flex;
   justify-content: center;
-  background: #2f2f2f;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #2f2f2f 0%, #7d7e7d 30%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #2f2f2f 0%, #7d7e7d 30%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #2f2f2f 0%, #7d7e7d 30%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f2f2f', endColorstr='#7d7e7d',GradientType=0 );
-  /* IE6-9 */ }
+  background-image: url("../assets/grey_wash_wall_@2X.png"); }
   section.section_second .container_second {
     display: flex;
     align-items: center;
@@ -1198,6 +1191,7 @@ section.section_second {
     width: 70%;
     color: white; }
     section.section_second .container_second .text_content {
+      padding: 2em;
       text-align: center; }
       section.section_second .container_second .text_content .hr {
         border: 0;
@@ -1208,7 +1202,9 @@ section.section_second {
         font-size: 3em;
         margin: 0.2em 1em 0.2em 1em;
         letter-spacing: 3px;
-        font-weight: bold; }
+        font-weight: bold;
+        color: #CFCFCF;
+        text-shadow: 0px 0px 1px #fff, 0px 0px 2px rgba(0, 0, 0, 0.7); }
       section.section_second .container_second .text_content h2.header_active {
         animation: comeHeader ease-out 1.2s;
         animation-iteration-count: 1;

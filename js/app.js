@@ -33,7 +33,7 @@ $(document).ready(function() {
   let h3 = $("h3");
 
   h3.typeIt({
-    startDelay: 2000,
+    startDelay: 1400,
     speed: 100,
     lifeLike: true,
     autoStart: false
